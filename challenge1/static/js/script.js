@@ -1,15 +1,15 @@
 //Challenge1: Your Age in Days
 
-function ageInDays() {
-    let birthyear = prompt('What year were you born.. Good friend');
-    let ageInDayss = (2022 - birthyear) * 365;
+function age() {
+    let birthyear = prompt('What year were you born.. Good friend?');
+    let ageInDays = (2022 - birthyear) * 365;
     let h1 = document.createElement('h1');
-    let textAnswer = document.createTextNode('You are ' + ageInDayss + ' days old');
-    h1.setAttribute('id', 'ageInDays');
+    let textAnswer = document.createTextNode('You are ' + ageInDays + ' days old');
+    h1.setAttribute('id', 'age');
     h1.appendChild(textAnswer);
     document.getElementById('flex-box-result').appendChild(h1);
 }
 
 function reset() {
-    document.getElementById('ageInDays').remove();
+    document.getElementById('age').remove();
 }
